@@ -20,7 +20,14 @@ export default defineConfig({
           dest: ''
         }
       ]
-    })
+    }),
+    {
+      name: 'watch-external',
+      buildStart(){
+        this.addWatchFile('scripts/content.js')
+        this.addWatchFile('scripts/background.js')
+      }
+    }
   ],
   
   build: {
