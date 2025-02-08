@@ -9,7 +9,7 @@
   "content_scripts": [
     {
       "js": ["scripts/content.js"],
-      "matches": ["http://*/*", "http://*/*"]
+      "matches": ["http://*/*", "https://*/*"]
     }
   ],
   "permissions": [

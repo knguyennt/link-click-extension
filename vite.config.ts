@@ -26,6 +26,7 @@ export default defineConfig({
       buildStart(){
         this.addWatchFile('scripts/content.js')
         this.addWatchFile('scripts/background.js')
+        this.addWatchFile('manifest.json')
       }
     }
   ],
