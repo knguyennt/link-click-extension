@@ -6,7 +6,19 @@
   "action": {
     "default_popup": "index.html"
   },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["http://*/*", "http://*/*"]
+    }
+  ],
   "permissions": [
     "storage"
-  ]
+  ],
+  "icons": {
+    "16": "images/maid.png",
+    "32": "images/maid.png",
+    "64": "images/maid.png",
+    "128": "images/maid.png"
+  }
 }

@@ -10,10 +10,19 @@ export default defineConfig({
         {
           src: 'manifest.json', // The path to your manifest.json file
           dest: '', // The destination directory inside dist
+        },
+        {
+          src: "public/images",
+          dest: ''
+        },
+        {
+          src: "scripts",
+          dest: ''
         }
       ]
     })
   ],
+  
   build: {
     outDir: 'dist/extension',
     assetsDir: '',
